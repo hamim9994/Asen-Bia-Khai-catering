@@ -67,3 +67,37 @@ text-shadow: 2px 2px 5px #e0bc453f ;
 .people{
   width: 6.7rem;
 }
+
+.image-class{
+  width: 100%;
+  height: auto;
+  display: block;
+  padding: 5px;
+  transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  overflow: hidden;
+}
+
+.imgss{
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+}
+
+.collumn{
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  overflow: hidden;
+}
+
+.image-class:hover{
+  transform: scale(1.2);
+}
+
+@media only screen and (max-width:770px){
+  .imgss{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+}
