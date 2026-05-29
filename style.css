@@ -21,7 +21,7 @@ text-shadow: 2px 2px 5px #e0bc453f ;
 
 .card{
   width: 22rem;
-  height: 22rem;
+  height: 25rem;
   border-radius: 2rem;
   background-color: whitesmoke;
   box-shadow: 2px 2px 10px ;
@@ -62,4 +62,8 @@ text-shadow: 2px 2px 5px #e0bc453f ;
   flex-wrap: wrap;
 
   padding: 1rem;
+}
+
+.people{
+  width: 6.7rem;
 }
