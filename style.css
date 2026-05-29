@@ -91,7 +91,7 @@ text-shadow: 2px 2px 5px #e0bc453f ;
 }
 
 .image-class:hover{
-  transform: scale(1.2);
+  transform: scale(1.08);
 }
 
 @media only screen and (max-width:770px){
