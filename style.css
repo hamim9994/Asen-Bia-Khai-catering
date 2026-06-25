@@ -101,3 +101,269 @@ text-shadow: 2px 2px 5px #e0bc453f ;
     overflow: hidden;
   }
 }
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#ffffff;
+    color:#333;
+}
+
+/* HEADER */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:#fdf7e8;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 70px;
+    z-index:1000;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#222;
+}
+
+nav{
+    display:flex;
+    align-items:center;
+    gap:35px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#555;
+    font-weight:600;
+}
+
+.signin{
+    background:#d4af37;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+/* HERO */
+
+.hero{
+    height:100vh;
+
+    background:
+    linear-gradient(rgba(0,0,0,.55),
+    rgba(0,0,0,.55)),
+    url("src/Images/hero/WhatsApp\ Image\ 2026-06-25\ at\ 11.05.59\ PM.jpeg");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.content{
+    width:100%;
+    color:white;
+}
+
+.content h4{
+    color:#d4af37;
+    letter-spacing:4px;
+    margin-bottom:20px;
+}
+
+.content h1{
+    font-size:90px;
+}
+
+.content span{
+    display:block;
+    color:#d4af37;
+    font-style:italic;
+}
+
+.content p{
+    margin-top:25px;
+    font-size:24px;
+    line-height:1.8;
+}
+
+.buttons{
+    margin-top:40px;
+}
+
+.quote,
+.menu-btn{
+    padding:18px 35px;
+    border-radius:10px;
+    font-size:18px;
+    margin:10px;
+}
+
+.quote{
+    background:#d4af37;
+    border:none;
+    color:white;
+}
+
+.menu-btn{
+    background:transparent;
+    border:2px solid white;
+    color:white;
+}
+
+/* NORMAL SECTIONS */
+
+.section{
+    min-height:100vh;
+    padding:140px 80px;
+    text-align:center;
+}
+
+.section h2{
+    font-size:60px;
+    color:#d4af37;
+    margin-bottom:20px;
+}
+
+.section p{
+    font-size:22px;
+    color:#666;
+}
+
+/* CONTACT */
+
+.contact{
+    min-height:100vh;
+    padding:100px 80px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:80px;
+    align-items:center;
+}
+
+.small{
+    color:#d4af37;
+    letter-spacing:5px;
+}
+
+.left h1{
+    font-size:70px;
+    color:#222;
+    margin:20px 0;
+}
+
+.left span{
+    display:block;
+    color:#d4af37;
+    font-style:italic;
+}
+
+.left p{
+    font-size:22px;
+    line-height:1.8;
+    color:#777;
+}
+
+.info{
+    margin-top:40px;
+}
+
+.info h5{
+    color:#d4af37;
+    margin-top:20px;
+}
+
+.right{
+    background:#fffaf0;
+    padding:40px;
+    border-radius:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,.1);
+}
+
+.row{
+    display:flex;
+    gap:20px;
+    margin-bottom:20px;
+}
+
+.row input,
+.row select{
+    flex:1;
+}
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:18px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:16px;
+}
+
+textarea{
+    resize:none;
+}
+
+.right button{
+    width:100%;
+    margin-top:20px;
+    padding:18px;
+    border:none;
+    border-radius:10px;
+    background:#d4af37;
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+}
+
+nav :hover{
+  color: #d4af37;
+  text-shadow: 50px solid black;
+}
+
+@media(max-width:900px){
+
+    header{
+        flex-direction:column;
+        gap:15px;
+        padding:20px;
+    }
+
+    nav{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .content h1{
+        font-size:50px;
+    }
+
+    .contact{
+        grid-template-columns:1fr;
+    }
+
+    .row{
+        flex-direction:column;
+    }
+}
